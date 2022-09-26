@@ -6,3 +6,5 @@ Portfolio for Human Language Technologies
 [Assignment 1](https://github.com/Billpdozier/HLT_Assignments/tree/main/Assignment%201)
 
 [WordNet](https://github.com/Billpdozier/HLT_Assignments/blob/main/WordNet/WordNet.ipynb)
+
+[GuessingGame](https://github.com/Billpdozier/HLT_Assignments/tree/main/WordGuessGame)
