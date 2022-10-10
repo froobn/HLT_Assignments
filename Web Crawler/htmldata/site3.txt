@@ -1,0 +1,650 @@
+
+ 
+ 
+  POST META TAGS  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  Add to homescreen for Chrome on Android  
+ 
+  Add to homescreen for Safari on IOS  
+ 
+ 
+ 
+  preconnect tells the browser to start a connection now so that it's ready when needed  
+ 
+ 
+ 
+  Facebook Pages and App ID  
+ 
+ 
+  Pinterest ID  
+ 
+  DNS Prefetch important domains  
+ 
+ 
+  required for speed score measurement  
+ 
+  org structured data  
+ 
+  article structured data  
+ 
+  breadCrumb structured data  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  Hardcoded CSS  
+ 
+  Page Options  
+ 
+  Proper Media Setup  
+ 
+  Javascript required onload  
+ 
+  Chartbeat  
+ 
+ 
+  Google Analytics  
+ 
+ 
+ 
+ 
+  adds night mode by default if needed to prevent page flashing  
+ 
+ 
+ 
+  <div id="navbar_wrapper_parent">  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ News & Politics 
+ 
+ 
+ Culture 
+ 
+ 
+ Food 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Science & Health 
+ 
+ 
+ Life Stories 
+ 
+ 
+ Video 
+ 
+ 
+ About 
+ 
+ 
+ 
+ 
+ 
+ subscribe 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ Profile 
+ Login/Sign Up 
+ Sticky Header:  
+ Night Mode:  
+ Saved Articles 
+ Go Ad-Free 
+ Logout 
+ 
+ 
+ 
+ 
+  sticky header and night mode toggles (only on screen widths <= 900px)  
+ 
+ 
+ Sticky Header 
+ 
+ 
+ 
+ 
+ Night Mode 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Search 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ Contribute  
+ 
+ 
+ Keep Salon Independent 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ subscribe 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  acts as a placeholder 
+ 
+ 
+  </div>  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  article badge type  
+ 
+ RECIPE   
+ Taste the decadent, dark chocolate and strawberry pie my dad describes as a keeper  
+ Whipped cream, dark chocolate, cream cheese, late-season strawberries — this dessert really does have everything  
+  WRITER BYLINE  
+ 
+ 
+ 
+ 
+ By  
+ Bibi Hutchings 
+ 
+ 
+ 
+ 
+ 
+  must be selected as a page option for post in railrode  
+  Published October 8, 2022 4:30PM (EDT)  
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+									Chocolate and strawberry pie									 (Getty Images/Foap AB)   
+ 
+ 
+ 
+  social sharing buttons  
+ 
+ 
+ -- 
+ Shares 
+ 
+ 
+ 
+ 
+ Facebook 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Twitter 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Reddit 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Email 
+ 
+ 
+ 
+ 
+ 
+  save articles for reading later. This button only shows up if the user is logged in  
+ 
+ 
+ 
+ 
+ 
+ 
+   view in app 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ In "Bibi's Gulf Coast Kitchen," columnist Bibi Hutchings takes you on a culinary journey across the coastal south. Come for the great food writing, stay for the delicious recipes. 
+ 
+  ARTICLE BODY  
+ 
+ 
+ Most every evening, like some  vampiric craving , it hits me. Just one tiny bite of rich,  dark chocolate  (definitely no more than three bites) is all I need. For me, it's the perfect finish and leaves my taste buds completely satisfied after  supper . After years of dedication, I believe I've even developed a superior way to savor chocolate: Don't chew it but rather patiently allow it to melt slowly between your tongue and the roof of your mouth until it's gone. I have actually spent time explaining how much better it tastes when you give your taste buds time to appreciate it, urging people to "Resist the Chew!"  
+ And as an added bonus, my method prevents it from getting stuck in your molars, which I really don't like. I'm here to help where I can.     
+ 
+ 
+ Related 
+ You only need 3 ingredients and 15 minutes to bake this magical chocolate cake 
+ 
+ 
+ Interestingly enough, and as much as  I love chocolate , I don't want it in the summer. I don't even think about it. For three months, I don't buy it, I don't crave it or even take it when it's offered. I don't know if it's  the heat  or that I'm getting the magic that's in chocolate from somewhere else, but whatever the reason, my lack of interest in it for three months out of the year has always been a predictable oddity of mine.  
+ I like my chocolate like I like my coffee — dark, rich and some may say fancy. I like chocolate with the highest cocoa content I can find with the fewest ingredients and definitely without milk. I find my chosen darker-than-dark variety of chocolate very palatable, but a few of my friends call it "black  butter ." 
+ 
+ I like my chocolate like I like my coffee — dark, rich and some may say fancy 
+ 
+ I admit I am pretty much the target consumer for smaller artisan, organic chocolatiers, and  coffee producers  for that matter, with their clever names, beautiful packaging and eco-friendly practices. I love being romanced by their promises of protecting birds and treating their workers well with their shade-grown, pesticide-free beans. I use the purported health benefits of  high-quality chocolate  as part of my elaborate rationalization for spending a little more for my near-daily fix.  
+ There is  some science  behind why I love my chocolate like I do. For one thing, the higher the cocoa content, the higher the flavonoids, antioxidants and even polyphenols, those wonderful compounds that can lower your blood pressure, protect your heart, prevent cancer and protect blood vessels. Quality chocolate is also high in magnesium, which helps relax your muscles. It has theobromine and a little caffeine, which when combined provide a  mild cannabis-like effect , calming your nerves and making you feel at peace. Additionally, chocolate has naturally occurring L-tryptophan in it, which helps make serotonin in your brain, which in turn makes you feel happy! And if that weren't enough, phenylethylalanine, an amino acid that triggers the release of dopamine, is also in chocolate. Dopamine is a vital part of the brain's reward system and makes you feel really good.  
+ So yeah, summer's over and it's hurricane season! I think I might need to pick up a lot more chocolate.                       
+ Fall is definitely in the air despite being unseasonably hot, and like clockwork, my chocolate cravings are back. This pie is one of my favorites for this time of year as  strawberries  are still in season and still so delicious, and my love of chocolate has returned after hibernating for the summer. This is an unbaked pie, except for the quick-bake  vanilla cookie crumb and butter crust  that is easy to make and amazingly good. It's served cold, so it bridges the gap between the fruit desserts I enjoyed throughout summer and fall's call for chocolate.    
+ For this pie I use  Equal Exchange Bittersweet Chocolate Chips 70% Cacao Content , but any  bittersweet chips  will do. If you don't like dark, bittersweet chocolate (or don't think you do), understand that the cream cheese and  whipped cream  mellow the chocolate in the filling, so you need the strength of flavor the bittersweet provides to hold its own when combined with the other ingredients.  
+ 
+ This pie has four layers of flavor that, without fail, give you a dopamine hit of pure sensual pleasure with every bite. 
+ 
+ This pie has four layers of flavor that, without fail, give you a dopamine hit of pure sensual pleasure with every bite. It's that good. To this day when I take my first bite, my shoulders drop, my eyes close, a little guttural grunt of bliss escapes as I exhale — as my dad says, "This pie…now it's a keeper." 
+ The vanilla cookie crust is wonderful just on its own, but the filling on top is better than any chocolate pie I've ever had. It has a bolder, truer chocolate flavor with an amazing, creamy mouth feel. Similar to how a bit of salt enhances the  sweetness of watermelon , the bright zingy acidity of the fresh strawberries provides just enough contrast to the filling to somehow elevate it even more. Lastly, the drizzle! The pure bittersweet chocolate drizzle dashed across the strawberries is the final slaying. If this pie could sing, it would sing in perfect harmony with lots sex appeal.    
+ 
+ Want more great food writing and recipes? Subscribe to  Salon Food's newsletter . 
+ 
+ Whatever your stressors happen to be right now — having a hurricane entering the Gulf of Mexico, back-to-school issues for yourself or your children, work stress, car trouble or maybe you just read the current news headlines — this pie makes it all better. Feel free to re-name it "Happiness Pie." It is magical! Whatever you decide to call it, you are going to love it. 
+ 
+ 
+ Chocolate strawberry pie  
+ 
+  Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License
+- https://fontawesome.com/license (Commercial License)  
+   
+  Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License
+- https://fontawesome.com/license (Commercial License)  
+   
+  Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License
+- https://fontawesome.com/license (Commercial License)  
+ 
+   
+  Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License
+- https://fontawesome.com/license (Commercial License)  
+ 
+   
+  Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License
+- https://fontawesome.com/license (Commercial License)  
+ 
+   
+ 
+   
+  Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License)  
+ 
+ 
+ 
+ 
+ 
+ 
+ Yields 
+ 
+ 8  servings 
+ 
+ 
+ 
+ Prep Time 
+ 
+ 30-45  minutes 
+ 
+ 
+ 
+ Cook Time 
+ 
+ 10  minutes, plus two hours of chilling 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Ingredients 
+ Crust: 
+ 1 1/2 cups crushed vanilla cookies (I use MadeGood)  
+ 4 tablespoons butter, melted 
+ Filling: 
+ 1/2 cup bittersweet chocolate chips, melted and cooled slightly 
+ 8 ounces cream cheese 
+ 8 ounces packaged whipped topping or *freshly whipped and sweetened heavy cream  
+ 2-4 tablespoons brown sugar (in addition to the sweetener you may use if you are making your own whipped cream) 
+ 1/2 teaspoon vanilla 
+ Strawberry Topping: 
+ Fresh strawberries, washed, dried and sliced - a pint will do but you can always use more if you have more. 
+ 4 tablespoons bittersweet chocolate chips 
+ 1-2 tablespoons butter 
+ 
+ 
+  
+   
+ 
+ 
+ Directions 
+ 
+ 
+ Heat oven to 325 
+ 
+ 
+ Mix cookie crumbs with melted butter and press into the bottom and up the sides of a buttered pie plate. 
+ 
+ 
+ Bake for 10 minutes and allow to cool completely. 
+ 
+ 
+ Melt chocolate chips in the microwave on low in a glass measuring cup and set aside to cool slightly. 
+ 
+ 
+ Note:  If you are making your own whipped cream, use your mixer to do this first so you don't have to wash and dry your mixer before going to the next step. You will need 1/2 cup of heavy cream to make the 8 ounces in a tub of store-bought whipped topping. Sweeten it to your liking. Scape into a bowl and set aside or place in the refrigerator to keep cool. 
+ 
+ 
+ Using an electric or stand up mixer, beat the cream cheese until light and fluffy. 
+ 
+ 
+ Add brown sugar and vanilla and mix well. 
+ 
+ 
+ Add cooled melted chocolate and mix well. 
+ 
+ 
+ Fold whipped topping into your chocolate mixture. 
+ 
+ 
+ Spoon chocolate mixture into crust and chill. 
+ 
+ 
+ Once thoroughly chilled, cover the top with sliced strawberries. 
+ 
+ 
+ Melt 4 tablespoons of bittersweet chips and combine with 1-2 tablespoons melted butter. (If it is too thick add a bit more melted butter or melted coconut oil.) 
+ 
+ 
+ Drizzle over the strawberries and return to the refrigerator. Serve after the chocolate has hardened slightly.  
+ 
+ 
+	  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Cook's Notes 
+ Cookies for Crust: 
+-Use any simple vanilla cookie you like from Nilla Wafers to my preference, MadeGood Vanilla Cookies.  
+-Make your crumbs very small and uniform in texture. 
+-Some cookies require more butter. You can easily add it right in the pie plate as you're making it. I have even melted the butter in the pie plate while the oven is preheating, then added the crumbs to the butter and made the crust right in the  pie plate . 
+ Brown Sugar: 
+-There are no raw eggs or other raw ingredients to prevent you from tasting brown sugar on its own. Additionally, you may find you don't want to add sugar to your filling as your whipped topping may provide enough sweetness. It is entirely up to you.  
+ Whipped Topping: 
+-Make your own or use store bought. If you make your own, make sure to sweeten it to your liking.   
+  
+ 
+ 
+ 
+ 
+ Read more 
+ from this author 
+ 
+ 
+ Want to take a bite of sunshine? These lemony citrus cooler cookies are the answer 
+ Cocoa, pecans and cinnamon: These Creole praline cookies are packed with dessert-worthy flavors 
+ Two classic Italian favorites meet in this satisfying, cheesy Pizza Pasta casserole 
+ 
+ 
+ Salon Food writes about stuff we think you'll like. While our editorial team independently selected these products, Salon has affiliate partnerships, so making a purchase through our links may earn us a commission.  
+ 
+ 
+ 
+ 
+  POST-ARTICLE WRITER BYLINE  
+ 
+ 
+ 
+ By  Bibi Hutchings 
+ 
+ 
+ 
+ 
+ 
+ Bibi Hutchings, a lifelong Southerner, lives along a quiet coastal Alabama bay with her cat, Zulu, and husband, Tom. She writes about the magical way food evokes memories, instantly bringing you back to the people, places and experiences of your life. Her stories take you all around the South and are accompanied with tried-and-true recipes that are destined to become a part of your memory-making as you share them with your friends and family.          
+ MORE FROM  Bibi Hutchings 
+ 
+ 
+  RevC Below Article Unit  
+ 
+  Subscription  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ Related Topics    ------------------------------------------ 
+ Bibi's Gulf Coast Kitchen 
+ Chocolate 
+ Dark Chocolate 
+ Pie 
+ Recipe 
+ Strawberry 
+ 
+ 
+ 
+ Related Articles 
+   
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+  HOME RIGHT RAIL 
+ 
+ 
+ 
+ Advertisement: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ Advertisement: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ Trending Articles from Salon 
+ 
+ 
+ 
+ 
+ 
+ Advertisement: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ Advertisement: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Home 
+ About 
+ Staff 
+ Contact 
+ Privacy 
+ Terms of Service 
+ Archive 
+ Go Ad Free 
+ 
+ 
+ Copyright © 2022 Salon.com, LLC. Reproduction of material from any Salon pages without written permission is strictly prohibited. SALON ® is registered in the U.S. Patent and Trademark Office as a trademark of Salon.com, LLC. Associated Press articles: Copyright © 2016 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed. 
+ 
+ 
+ DMCA Policy 
+ 
+ 
+ 
+ 
+  sticky unit  
+ 
+  lazy load images (hardcoded)  
+ 
+  Page CSS  
+ 
+ 
+  Site javascript  
+ 
+ 
+ 
+  Analytics Events  
+ 
+ 
+ 
+ 

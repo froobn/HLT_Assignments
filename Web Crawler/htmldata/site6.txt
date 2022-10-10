@@ -1,0 +1,355 @@
+
+ 
+ 
+  World Table  
+ 
+  Google Tag Manager  
+ 
+  End Google Tag Manager  
+  for new Google Adsense  
+ 
+  Norton  
+ 
+ Favicons 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  This site is optimized with the Yoast SEO plugin v12.7.1 - https://yoast.com/wordpress/plugins/seo/  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  / Yoast SEO plugin.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ Main font and style 
+ 
+ 
+ 
+ 
+ Video styling dependencies 
+ 
+ 
+ 
+ Google Analytics 
+ 
+ 
+ 
+ Google DFP Ads 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0)  
+ 
+  End Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0)  
+ 
+ 
+ 
+ 
+  Google Tag Manager (noscript)  
+ 
+  End Google Tag Manager (noscript)  
+ 
+  Pushdown Ad  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  logo  
+ 
+  /*= get_current_weather() */? TODAY'S WEATHER 
+ Idaho Falls 58 °  /.awesome-weather-current-temp  clear sky humidity: 51% wind: 5mph SSE H 58 • L 58  /.awesome-weather-todays-stats     /.awesome-weather-wrap  
+ 
+ 
+ 
+ 
+  <div class="groupclear"></div>  
+ 
+ Send a Tip  (208) 528-NEWS 
+  <div id="search"><a href="#" id="searchToggle"><i class="fa fa-search"></i></a></div>  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  Search 
+ Idaho Falls 
+ Rexburg 
+ Pocatello 
+ East Idaho 
+ 
+ Traffic Webcams 
+ Blackfoot 
+ Rigby 
+ St. Anthony 
+ Driggs 
+ 
+ 
+ News 
+ 
+ Daybell Case 
+ Crime Watch 
+ Education 
+ Nation/World 
+ Politics 
+ Outdoors 
+ Arts & Entertainment 
+ Business & Money 
+ Faith & Family 
+ East Idaho Elects 
+ Sports 
+ 
+ 
+ Obituaries 
+ Features 
+ 
+ 7 Questions 
+ Biz Buzz 
+ Dave Says 
+ East Idaho Eats 
+ Feel Good Friday 
+ In the Garden 
+ Life Lessons 
+ Hometown Helpers 
+ Small Town Spotlight 
+ Living the Wild Life 
+ Looking Back 
+ Pet of the Week 
+ Small Business Spotlight 
+ Movies & TV 
+ Finding Faith 
+ Secret Santa 
+ 
+ 
+ Calendar 
+ Weather 
+ Swag 
+ Lifestyles 
+   
+ Send a Tip  |   (208) 528-NEWS 
+ Submit a name to Secret Santa 
+ 
+ 
+ 
+ 
+  /22701698660/ein_home_leader_1  
+ 
+ 
+ 
+ 
+ 
+ 
+ No news in this case is not good news 
+ Well that's embarassing...  We seem to have misplaced that page. 
+ Lets try one of these links, shall we? 
+ Idaho Falls 
+ Rexburg 
+ Pocatello 
+ East Idaho 
+ 
+ Traffic Webcams 
+ Blackfoot 
+ Rigby 
+ St. Anthony 
+ Driggs 
+ 
+ 
+ News 
+ 
+ Daybell Case 
+ Crime Watch 
+ Education 
+ Nation/World 
+ Politics 
+ Outdoors 
+ Arts & Entertainment 
+ Business & Money 
+ Faith & Family 
+ East Idaho Elects 
+ Sports 
+ 
+ 
+ Obituaries 
+ Features 
+ 
+ 7 Questions 
+ Biz Buzz 
+ Dave Says 
+ East Idaho Eats 
+ Feel Good Friday 
+ In the Garden 
+ Life Lessons 
+ Hometown Helpers 
+ Small Town Spotlight 
+ Living the Wild Life 
+ Looking Back 
+ Pet of the Week 
+ Small Business Spotlight 
+ Movies & TV 
+ Finding Faith 
+ Secret Santa 
+ 
+ 
+ Calendar 
+ Weather 
+ Swag 
+ Lifestyles 
+   
+ 
+ 
+ 
+   © 2015 - 2022 
+EastIdahoNews.com, LLC. 
+All rights reserved 
+ 
+ 
+ Download Our App 
+ Terms of Use 
+ Copyright Claims 
+ Privacy Statement 
+ 
+ 
+ About Us 
+ Contact Us 
+ Advertise With Us 
+ Careers 
+ 
+ 
+ Our Team 
+ Our Ethics 
+ li><a href="">FAQ's</a></li 
+  Get Email Alerts 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ If you choose local pickup, please get your gift certificate at our office at 400 W. Sunnyside in Idaho Falls  Dismiss   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  Start Alexa Certify Javascript  
+ 
+ 
+  End Alexa Certify Javascript  
+  div id="w"  
+ 
+ 
+ 
+    #mobileFooterAd  
+  detect ad blockers  
+   
+  end detect ad blockers  
+ 
+ 

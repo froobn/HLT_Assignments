@@ -1,0 +1,16 @@
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ [if lte IE 9]><meta http-equiv="refresh" content="1;url=/2.242.1/static/unsupp.html" /><![endif] [if gt IE 9><! <![endif] 
+ [if lte IE 9]><script>if (navigator.appVersion.indexOf('Windows Phone OS 7') > -1 || navigator.appVersion.indexOf('WP7') > -1) {var $html = document.getElementsByTagName('html')[0];Modernizr.load({test: Modernizr.fontface,complete: function () {'use strict';$html.className = $html.className.replace(/\bfontface\b/, 'no-fontface');}});}</script><![endif] 
+ US World Politics Business Opinion Health Entertainment Style Travel Sports Videos Edition U.S. International Arabic Español Search Edition U.S. International Arabic Español US Crime + Justice Energy + Environment Extreme Weather Space + Science World Africa Americas Asia Australia China Europe India Middle East United Kingdom Politics 2020 Election Facts First Election 101 Business Markets Tech Media Success Perspectives Videos Opinion Political Op-Eds Social Commentary Health Food Fitness Wellness Parenting Vital Signs Entertainment Stars Screen Binge Culture Media Tech Innovate Gadget Foreseeable Future Mission: Ahead Upstarts Work Transformed Innovative Cities Style Arts Design Fashion Architecture Luxury Beauty Video Travel Destinations Food and Drink Stay News Videos Sports Pro Football College Football Basketball Baseball Soccer Olympics Videos Live TV  Digital Studios CNN Films HLN TV Schedule TV Shows A-Z CNNVR Coupons CNN Underscored Explore Wellness Gadgets Lifestyle CNN Store More Photos Longform Investigations CNN Profiles CNN Leadership CNN Newsletters Work for CNN Weather Climate Storm Tracker Wildfire Tracker Video Follow CNN  
+ 
+ Uh-oh! It could be you, or it could be us, but there's no page here.  input type="text" size=45 class="search-input__text" placeholder="Search CNN" id="searchInputTop" name="q"/><button class="search-input__button"><i class="cnn-icon icon--search"></i>Search</button  
+ Search US Crime + Justice Energy + Environment Extreme Weather Space + Science World Africa Americas Asia Australia China Europe India Middle East United Kingdom Politics 2020 Election Facts First Election 101 Business Markets Tech Media Success Perspectives Videos Opinion Political Op-Eds Social Commentary Health Food Fitness Wellness Parenting Vital Signs Entertainment Stars Screen Binge Culture Media Tech Innovate Gadget Foreseeable Future Mission: Ahead Upstarts Work Transformed Innovative Cities Style Arts Design Fashion Architecture Luxury Beauty Video Travel Destinations Food and Drink Stay News Videos Sports Pro Football College Football Basketball Baseball Soccer Olympics Videos Live TV  Digital Studios CNN Films HLN TV Schedule TV Shows A-Z CNNVR Coupons CNN Underscored Explore Wellness Gadgets Lifestyle CNN Store More Photos Longform Investigations CNN Profiles CNN Leadership CNN Newsletters Work for CNN Weather Climate Storm Tracker Wildfire Tracker Video Follow CNN  Terms of Use Privacy Policy Accessibility & CC AdChoices About Us CNN Store Newsletters Transcripts License Footage CNN Newsource Sitemap ©    2020    Cable News Network. A Warner Media Company. All Rights Reserved. CNN Sans ™ & © 2016 Cable News Network. 
+ 

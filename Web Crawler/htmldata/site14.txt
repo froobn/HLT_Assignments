@@ -1,0 +1,2250 @@
+
+ 
+ 
+  New Relic Browser snippet , should be before everything else  
+ 
+                               
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The design nodes specified the header path.
+Generally you can find this specified at /etc/designs/<SITE>/basePage/header/@header
+ 
+ 
+  SDI include (path: /content/food-com/navigationConfigs/header/_jcr_content/header.cache.html, resourceType: foodcom/components/navigation/header)  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Watch Full Seasons 
+ 
+ 
+ TV Schedule 
+ 
+ 
+ Newsletters 
+ 
+ 
+ Videos 
+ 
+ 
+ Sweepstakes 
+ 
+ 
+ Classes 
+ 
+ 
+ Magazine 
+ 
+ 
+ Blog 
+ 
+ 
+ Shows A-Z 
+ 
+ 
+ Chefs A-Z 
+ 
+ 
+ Restaurants 
+ 
+ 
+ Recipes on TV 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            Recipes
+           
+ 
+ 
+ 
+ Recipes 
+ 
+ 
+ 
+ Halloween 
+ 
+ 
+ Family Dinners 
+ 
+ 
+ Slow-Cooker Recipes 
+ 
+ 
+ Healthy Meals + More 
+ 
+ 
+ On TV 
+ 
+ 
+ 
+ See All Recipes 
+ 
+ 
+ 
+ 
+ 
+ Recipe of the Day 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Grated Pasta Chicken Soup 
+ 
+ 
+ 
+ 
+ 
+ Trending Recipes 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Fall Sangria 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Southern Green Beans 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ The Best Baked Salmon 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Ghost Brownies 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            Shows
+           
+ 
+ 
+ 
+ Shows 
+ 
+ 
+ TV Schedule 
+ See TV Schedule 
+ 
+ 
+ 
+ 
+ 
+ Girl Meets Farm 
+ 
+ 
+ 7am | 6c 
+ 
+ 
+ 
+ 
+ Girl Meets Farm 
+ 
+ 
+ 7:30am | 6:30c 
+ 
+ 
+ 
+ 
+ Valerie's Home Cooking 
+ 
+ 
+ 8am | 7c 
+ 
+ 
+ 
+ 
+ Valerie's Home Cooking 
+ 
+ 
+ 8:30am | 7:30c 
+ 
+ 
+ 
+ 
+ The Pioneer Woman 
+ 
+ 
+ 9am | 8c 
+ 
+ 
+ 
+ 
+ The Pioneer Woman 
+ 
+ 
+ 9:30am | 8:30c 
+ 
+ 
+ 
+ 
+ The Pioneer Woman 
+ 
+ 
+ 10am | 9c 
+ 
+ 
+ 
+ 
+ The Pioneer Woman 
+ 
+ 
+ 10:30am | 9:30c 
+ 
+ 
+ 
+ 
+ Girl Meets Farm 
+ 
+ 
+ 11am | 10c 
+ 
+ 
+ 
+ 
+ Mary Makes It Easy 
+ 
+ 
+ 11:30am | 10:30c 
+ 
+ 
+ 
+ 
+ Be My Guest with Ina Garten 
+ 
+ 
+ 12pm | 11c 
+ 
+ 
+ 
+ 
+ The Kitchen 
+ 
+ 
+ 1pm | 12c 
+ 
+ 
+ 
+ 
+ Bobby's Triple Threat 
+ 
+ 
+ 2pm | 1c 
+ 
+ 
+ 
+ 
+ Guy's Grocery Games 
+ 
+ 
+ 3pm | 2c 
+ 
+ 
+ 
+ 
+ Guy's Grocery Games 
+ 
+ 
+ 4pm | 3c 
+ 
+ 
+ 
+ 
+ Guy's Grocery Games 
+ 
+ 
+ 5pm | 4c 
+ 
+ 
+ 
+ 
+ Guy's Grocery Games 
+ 
+ 
+ 6pm | 5c 
+ 
+ 
+ 
+ 
+ Guy's Grocery Games 
+ 
+ 
+ 7pm | 6c 
+ 
+ 
+ 
+ 
+ Halloween Wars 
+ 
+ 
+ 8pm | 7c 
+ 
+ 
+ 
+                    On Tonight
+                 
+ 
+ 
+ Halloween Wars 
+ 
+ 
+ 9pm | 8c 
+ 
+ 
+ 
+ 
+ Outrageous Pumpkins 
+ 
+ 
+ 10pm | 9c 
+ 
+ 
+ 
+ 
+ Halloween Baking Championship 
+ 
+ 
+ 11pm | 10c 
+ 
+ 
+ 
+ 
+ Halloween Wars 
+ 
+ 
+ 12am | 11c 
+ 
+ 
+ 
+ 
+ Outrageous Pumpkins 
+ 
+ 
+ 1am | 12c 
+ 
+ 
+ 
+ 
+ Halloween Baking Championship 
+ 
+ 
+ 2am | 1c 
+ 
+ 
+ 
+ 
+ Halloween Wars 
+ 
+ 
+ 3am | 2c 
+ 
+ 
+ 
+ See All Shows 
+ 
+ 
+ 
+ 
+ 
+ 
+ Popular Shows 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Halloween Baking Championship 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Halloween Wars 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Diners, Drive-Ins and Dives 
+ 
+ 
+ 
+ 
+ 
+ In the Kitchen 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ The Pioneer Woman 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ The Kitchen 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Girl Meets Farm 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            Chefs
+           
+ 
+ 
+ 
+ Chefs 
+ 
+ 
+ 
+ Chefs & Hosts 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Kardea Brown 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Ree Drummond 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Ina Garten 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Sunny Anderson 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Bobby Flay 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Valerie Bertinelli 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Guy Fieri 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Giada De Laurentiis 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Molly Yeh 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ See All Chefs 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            Trending
+           
+ 
+ 
+ 
+ Trending 
+ 
+ 
+ 
+ Trending Eats 
+ 
+ 
+ Newsletters 
+ 
+ 
+ 
+ 
+ 
+ 
+ The Latest 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ How to Perfect TikTok’s Pancake Spaghetti 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Now, It’s Really Everywhere: Hefty Makes Pumpkin Spice-scented Trash Bags 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ McDonald’s Is Finally Making Happy Meals for Adults 
+ 
+ 
+ 
+ 
+ 
+ Currently Obsessed With... 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Snoop Dogg Drops a New Sparkling Wine (With a Label That Raps) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Hostess Introduces Bite-Size Twinkies, Ding Dongs, + Donettes 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            Shop
+           
+ 
+ 
+ 
+ Shop 
+ 
+ 
+ 
+ Product Reviews 
+ 
+ 
+ Gift Ideas 
+ 
+ 
+ Shop Everything 
+ 
+ 
+ 
+ Shop Now 
+ 
+ 
+ 
+ 
+ 
+ What's New 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ The Best Store-Bought Canned Pumpkin, Tested by Food Network Kitchen 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Wayfair's 5 Days of Deals Sale Starts Today 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 7 Best Air Fryers of 2022, Tested by Food Network Kitchen 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 20 Best Holiday Gifts for the Host 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 10 Best Canned Chicken Noodle Soup, Tested by Food Network Kitchen 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            Sweepstakes
+           
+ 
+ 
+ 
+ Sweepstakes 
+ 
+ 
+ 
+ Hauntingly Delicious Sweepstakes 
+ 
+ 
+ Urban Oasis 2022 
+ 
+ 
+ All Sweepstakes + Contests 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Enter Daily for a Chance to Win $10,000 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Urban Oasis 2022 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    discovery+
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Clear Icon 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Search Icon 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Home 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Page Not Found 
+ 
+ 
+ 
+ 
+ 
+ 
+ The page you're looking for seems to have disappeared! Maybe you typed in the URL incorrectly; why don't you check the web address again? If you bookmarked the page, try our search to find what you're looking for. 
+ 
+ If you feel you've reached this page in error, please  contact us . You can also visit the  FoodNetwork.com homepage  to browse the site. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            What's New on Food Network
+           
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+         Yesterday
+		 
+ 
+ 
+ 
+          All the Ways to Christmas-ify Your Halloween This Year
+         
+ 
+ 
+ 
+ 
+ 
+ 
+                                    
+                                     By:  Michelle Baricevic 
+ 
+ 
+ 
+ 
+	    If you're someone who wishes Christmas came early, these new Halloween traditions are your chance to shine!
+        
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+          The Best Store-Bought Canned Pumpkin, Tested by Food Network Kitchen
+         
+ 
+ 
+ 
+ 
+ 
+ 
+                                    
+                                     By:  Food Network Kitchen 
+ 
+ 
+ 
+ 
+	    We sorted out the gourd from the bad!
+        
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+          Angry Orchard’s Limited-edition Hard Cider Kegs Belong at Your Halloween Party
+         
+ 
+ 
+ 
+ 
+ 
+ 
+                                    
+                                     By:  Amy Reiter 
+ 
+ 
+ 
+ 
+	    They free ship nationwide.
+        
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+          Wayfair's 5 Days of Deals Sale Starts Today
+         
+ 
+ 
+ 
+ 
+ 
+ 
+                                    
+                                     By:  Aly Walansky 
+ 
+ 
+ 
+ 
+	    Snag up to 80% off deals on Le Creuset, Cuisinart, Breville and more!
+        
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+          Broccolini vs Broccoli: What’s the Difference?
+         
+ 
+ 
+ 
+ 
+ 
+ 
+                                    
+                                     By:  Food Network Kitchen 
+ 
+ 
+ 
+ 
+	    And where does broccoli rabe fit in?
+        
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+          7 Best Air Fryers of 2022, Tested by Food Network Kitchen
+         
+ 
+ 
+ 
+ 
+ 
+ 
+                                    
+                                     By:  Food Network Kitchen 
+ 
+ 
+ 
+ 
+	    Our favorite air fryers can churn out crispy fries, crunchy chicken wings and quick weeknight dinners without fail.
+        
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+          A Deep Dive Into Chai: Its History, Its Health Benefits and How to Prepare It
+         
+ 
+ 
+ 
+ 
+ 
+ 
+                                    
+                                     By:  Food Network Kitchen 
+ 
+ 
+ 
+ 
+	    According to the founder of a small batch chai company.
+        
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+          How to Perfect TikTok’s Pancake Spaghetti
+         
+ 
+ 
+ 
+ 
+ 
+ 
+                                    
+                                     By:  Amy Reiter 
+ 
+ 
+ 
+ 
+	    A Food Network recipe developer offers tips and tricks — and suggestions for adding a little zhuzh.
+        
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+          20 Best Holiday Gifts for the Host
+         
+ 
+ 
+ 
+ 
+ 
+ 
+                                    
+                                     By:  Layla Khoury-Hanold 
+ 
+ 
+ 
+ 
+	    The most delicious, tasteful and thoughtful presents for your fave foodie host.
+        
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+          10 Best Canned Chicken Noodle Soup, Tested by Food Network Kitchen
+         
+ 
+ 
+ 
+ 
+ 
+ 
+                                    
+                                     By:  Food Network Kitchen 
+ 
+ 
+ 
+ 
+	    For the times when you can’t be bothered with stovetop cooking.
+        
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+          What’s the Most Popular Halloween Candy in Your State?
+         
+ 
+ 
+ 
+ 
+ 
+ 
+                                    
+                                     By:  Amy Reiter 
+ 
+ 
+ 
+ 
+	    One candy is the most searched for in 23 out of 50 states.
+        
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+          Are You Chronically Fatigued or Just Tired?
+         
+ 
+ 
+ 
+ 
+ 
+ 
+                                    
+                                     By:  Vanessa Rissetto MS, RD, CDN 
+ 
+ 
+ 
+ 
+	    Good health includes rest. A dietitian shares tips for combatting tiredness — and when to see a doctor.
+        
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+          After 6 Long Years, McDonald’s Brings Back Its Happy Meal Halloween Pails
+         
+ 
+ 
+ 
+ 
+ 
+ 
+                                    
+                                     By:  Aly Walansky 
+ 
+ 
+ 
+ 
+	    McBoo, McPunk’n and McGoblin made their first appearance in 1986.
+        
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+          I Tried Rao’s New Frozen Pizzas
+         
+ 
+ 
+ 
+ 
+ 
+ 
+                                    
+                                     By:  Aly Walansky 
+ 
+ 
+ 
+ 
+	    Rao’s jarred pasta sauces are a favorite among Food Network editors — so of course, I had to taste the brand’s latest launch.
+        
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+          Walmart’s Rollbacks and More Sale Is Coming — Just in Time for Early Holiday Shopping
+         
+ 
+ 
+ 
+ 
+ 
+ 
+                                    
+                                     By:  Aly Walansky 
+ 
+ 
+ 
+ 
+	    The sale will run October 10 through 13!
+        
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+          4 Best Paring Knives, Tested by Food Network Kitchen
+         
+ 
+ 
+ 
+ 
+ 
+ 
+                                    
+                                     By:  Food Network Kitchen 
+ 
+ 
+ 
+ 
+	    These small-but-mighty knives are great for prepping produce and tedious kitchen tasks.
+        
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+          Don’t Worry, You Can Still Snag Hidden Valley Ranch’s Sold-Out Home Decor
+         
+ 
+ 
+ 
+ 
+ 
+ 
+                                    
+                                     By:  Amy Reiter 
+ 
+ 
+ 
+ 
+	    The dressing brand’s vibrant home collection is set to be restocked within the next week.
+        
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+          10 of the Most Sour Candies in the World, Ranked
+         
+ 
+ 
+ 
+ 
+ 
+ 
+                                    
+                                     By:  Joey Skladany 
+ 
+ 
+ 
+ 
+	    The world of sour candy goes way beyond grocery store staples. These are 10 of the most sour candies you can buy — and we tried th
+        
+          …
+          
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+          14 Ingredients You Can Substitute for Worcestershire Sauce
+         
+ 
+ 
+ 
+ 
+ 
+ 
+                                    
+                                     By:  Food Network Kitchen 
+ 
+ 
+ 
+ 
+	    Worcestershire sauce has an unforgettably punchy flavor that is unlike anything else. So how can you replace it if you’ve run out?
+        
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+          White Castle Makes Beer That Pairs Perfectly With Its Iconic Sliders
+         
+ 
+ 
+ 
+ 
+ 
+ 
+                                    
+                                     By:  Amy Reiter 
+ 
+ 
+ 
+ 
+	    Created in collaboration with Evil Genius Beer Company, the "It Hits Different" IPA honestly sounds delicious.
+        
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+          Precisely How to Open a Wine Bottle According to a Sommelier
+         
+ 
+ 
+ 
+ 
+ 
+ 
+                                    
+                                     By:  Food Network Kitchen 
+ 
+ 
+ 
+ 
+	    This goes out to anyone who’s every broken a cork.
+        
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+          How to Make a Lattice Pie Crust
+         
+ 
+ 
+ 
+ 
+	    Follow this step-by-step guide the next time you need an impressive pie crust and lattice top.
+        
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+          Find M&M’s New Character, Purple, on New Caramel Cold Brew Packs
+         
+ 
+ 
+ 
+ 
+ 
+ 
+                                    
+                                     By:  Aly Walansky 
+ 
+ 
+ 
+ 
+	    The inside of these M&M’s are a whole new world.
+        
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+          14 Pink Products that Bring Barbiecore to Your Kitchen
+         
+ 
+ 
+ 
+ 
+ 
+ 
+                                    
+                                     By:  Bella Durgin-Johnson 
+ 
+ 
+ 
+ 
+	    Bubbly, hot pink is having a major moment!
+        
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+          How to Make a Salami Rose
+         
+ 
+ 
+ 
+ 
+ 
+ 
+                                    
+                                     By:  Food Network Kitchen 
+ 
+ 
+ 
+ 
+	    How to make the adorable cheeseboard garnish that’s all over social media.
+        
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+          Spindrift’s New Spiced Apple Drink Is “Neither Cider nor Seltzer”
+         
+ 
+ 
+ 
+ 
+ 
+ 
+                                    
+                                     By:  Amy Reiter 
+ 
+ 
+ 
+ 
+	    The brand’s first seasonal flavor is offered in both sparkling and spiked varieties.
+        
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+          A Guide to the 10 Most Common Types of Figs
+         
+ 
+ 
+ 
+ 
+ 
+ 
+                                    
+                                     By:  Food Network Kitchen 
+ 
+ 
+ 
+ 
+	    We dive into what each one looks like, tastes like and more.
+        
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+          6 Best Bourbons, According to a Spirits Expert
+         
+ 
+ 
+ 
+ 
+ 
+ 
+                                    
+                                     By:  John deBary 
+ 
+ 
+ 
+ 
+	    Including the best for an Old Fashioned, Manhattan or Whiskey Sour!
+        
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+          It's Impossible Not to Love Runzas, the Stuffed Rolls from My Hometown
+         
+ 
+ 
+ 
+ 
+                                     
+                                      By:
+                                     
+ 
+                                      Erin McDowell
+                                     
+ 
+ 
+ 
+	    Plus my recipe for cheesy broccoli filled runzas.
+        
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+          What Is a Fig? And How Do You Cook with Figs?
+         
+ 
+ 
+ 
+ 
+ 
+ 
+                                    
+                                     By:  Food Network Kitchen 
+ 
+ 
+ 
+ 
+	    A fig orchard owner is here to answer your questions.
+        
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            
+              
+              Load More
+            
+           
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Site Map 
+ 
+ 
+ Visitor Agreement 
+ 
+ 
+ AdChoices 
+ 
+ 
+ Privacy Notice 
+ 
+ 
+ About 
+ 
+ 
+ Newsroom 
+ 
+ 
+ Advertise 
+ 
+ 
+ Help 
+ 
+ 
+ TV Ratings 
+ 
+ 
+ Online Closed Captioning 
+ 
+ 
+ California Privacy Notice 
+ 
+ 
+ CA Do Not Sell My Info 
+ 
+ 
+ Accessibility 
+ 
+ 
+ Newsletters 
+ 
+ 
+ Discovery, Inc. 
+ 
+ 
+ 
+ 
+ 
+ International Editions 
+ 
+ United States 
+ Asia 
+ Brazil 
+ Canada 
+ Europe, Middle East & Africa 
+ United Kingdom 
+ Latin America 
+ 
+ 
+ 
+ The Discovery Family of Networks 
+ 
+ HGTV 
+ Food.com 
+ Travel Channel 
+ TLC.com 
+ Discovery.com 
+ Cooking Channel 
+ 
+ 
+ 
+          © 2022  Warner Bros. Discovery, Inc. or its subsidiaries and affiliates. All rights reserved.
+         
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
