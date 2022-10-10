@@ -14,3 +14,5 @@ Portfolio for Human Language Technologies
 [NGrams Narrative](https://github.com/Billpdozier/HLT_Assignments/blob/main/NGrams/N-grams.pdf)
 
 [Web Crawler](https://github.com/Billpdozier/HLT_Assignments/tree/main/Web%20Crawler)
+
+[Web Crawler Report](https://github.com/Billpdozier/HLT_Assignments/blob/main/Web%20Crawler/Web%20Crawler%20Report.pdf)
