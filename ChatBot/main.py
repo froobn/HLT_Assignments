@@ -1,4 +1,5 @@
 import json
+import pickle
 import random
 import requests
 import spacy
@@ -17,9 +18,26 @@ nlp = spacy.load("en_core_web_md")
 pl = Prolog()
 facts = []
 recipes = {}
+
+sample_pies = [
+    'apple pie',
+    'cherry pie',
+    'pumpkin pie',
+    'pecan pie',
+    'chocolate pie',
+    'blueberry pie',
+    'key lime pie',
+    'peanut butter pie',
+    'lemon meringue pie',
+    'banana cream pie'
+]
+
+
 phrases = {
     "none": [],
-    "hello": [['hello','greetings','hi', 'salutations'], 0],
+    "ask_name": [["what is your name", "what is your _", "what do i call you"],0],
+    "thank": [["thank you", "thank you piebot", "thank _"],0],
+    "hello": [['hello','greetings','hi', 'salutations', 'hi _'], 0],
     "goodbye": [['goodbye','bye','talk to you later'],0],
     "name": [['my name is _', 'I am named _', 'You can call me _'], 0],
     "neutral": [["_ is alright, _ is not bad", "I do not hate _", "_ is not the worst", "_ is okay"], 0],
@@ -29,27 +47,28 @@ phrases = {
     "get_ingredients": [["what ingredients are in _", "what is used in _", "what do i need to make _"], 0],
     "recommend": [["what is your recommendation","what do you recommend?","recommend me a pie", "what is a pie i might like", "find me a pie i would like"],0],
     "prepare_time": [["how long does _ take to make", "how long to make _", "how long until i can eat _"],0],
-    "get_recipe": [["find me a recipe for _", "can you get me a recipe for _", "search for recipes for _"], 0]
+    "get_recipe": [["what is the recipe for _","find me a recipe for _", "can you get me a recipe for _", "search for recipes for _"], 0]
 }
 
 responses = { #TODO ADD MORE RESPONSES
-    "none": ["I don't quite understand.", "I"],
+    "none": ["I don't quite understand.", "I don't think I understood that."],
+    "ask_name": ['My name is PieBot!'],
+    "thank": ["My pleasure!", "No problem!", "The pleasure is mine!"],
     "hello": ["Hello!", "Hi there!","Salutations fellow pie enjoyer!"],
     "goodbye": ["Goodbye!", "It was nice talking with you!"],
-    "name": ["Hello {}!", "Nice to meet you, {}!"],
+    "name": ["Hello {}!", "Nice to meet you, {}!", "Hi {}!"],
     "neutral": ["That's understandable."],
-    "like": ["Isn't {} great!"],
-    "dislike": ["I know a lot of people that feel the same way."],
-    "ask_ingredient": ["{} is in the recipe for {}."],
-    "get_ingredients": ["{} contains the following:\n {}"],
-    "recommend": ["I think you would like {}!"],
-    "prepare_time": ["{} takes {} minutes to prepare"],
+    "like": ["Isn't {} great!", "{} is pretty popular, isn't it!"],
+    "dislike": ["I know a lot of people that feel the same way.", "Yeah I'm not the biggest fan either."],
+    "ask_ingredient": ["{} is in the recipe for:\n{}"],
+    "get_ingredients": ["{} contains the following:\n{}"],
+    "recommend": ["I think you would like:\n{}"],
+    "prepare_time": ["{} takes {} minutes to prepare."],
     "get_recipe": ["here is your recipe: {}"]
 }
 
 def process_statement(statement):
     statement = contractions.fix(statement)
-    statement = statement.lower()
     statement = "".join([w for w in statement if w not in string.punctuation])
     #print(statement)
     return statement
@@ -81,14 +100,18 @@ def tag_statement(statement):
 
 def get_object(statement):
     output = ""
+    compounded = False
+    # for tok in nlp(statement): #PRINTS SENTENCE STRUCTURE OF EACH WORD
+    #     print(tok.__str__(), tok.dep_)
     for tok in nlp(statement):
-        #print(tok.dep_)
         if tok.dep_ == 'compound' or tok.dep_ == 'amod':
+            compounded = True
             output += tok.__str__() + " "
         elif tok.dep_ != 'dobj' and tok.dep_ != 'pobj':
+            compounded = False
             output = ""
-        elif tok.dep_ == 'dobj' or tok.dep_ == 'pobj':
-            return output + tok.__str__()
+        elif (compounded and 'pie' in tok.text) or (tok.text != 'recipe' and tok.text != 'bake') and (tok.dep_ == 'dobj' or tok.dep_ == 'pobj') and not 'pie' in tok.text:
+            return output + tok.__str__().lower()
     if output == "":
         for tok in nlp(statement):
             if tok.dep_ == 'compound' or tok.dep_ == 'amod':
@@ -96,9 +119,12 @@ def get_object(statement):
             elif tok.dep_ != 'nsubj':
                 output = ""
             elif tok.dep_ == 'nsubj':
-                return output + tok.__str__()
-            
-    return output
+                return output + tok.__str__().lower()
+    if output == "":
+        if 'pie' in statement:
+            return "pie"
+    output = lemmatizer.lemmatize(output)
+    return output.lower()
         
 def get_attribute(statement):
     for tok in nlp(statement):
@@ -107,13 +133,10 @@ def get_attribute(statement):
     return None
         
 def get_response(tag, object):
-    if tag == 'none':
-        return random.choice(responses.get(tag))
+    if tag == 'none' or tag == ('none',):
+        return random.choice(responses.get('none'))
     
-    if tag == 'neutral':
-        return random.choice(responses.get(tag))
-    
-    if tag == 'hello':
+    if tag == 'neutral' or tag == 'hello' or tag == 'ask_name' or tag == 'thank' or tag == 'favorite':
         return random.choice(responses.get(tag))
     
     if tag == 'goodbye':
@@ -150,31 +173,58 @@ def get_response(tag, object):
         return random.choice(responses.get(tag))
     
     if tag == 'ask_ingredient':
+        recipe_list = search_ingredient(object)
         object = object.capitalize()
-        return random.choice(responses.get(tag)).format(object, "test_pie") # TODO QUERY RECIPE LIST FOR RECIPES WITH INGREDIENTS
+        return random.choice(responses.get(tag)).format(object, recipe_list)
     
     if tag == 'get_ingredients':
+        recipe = get_recipe(object)
+        if not recipe:
+            return
+        ingredients = get_ingredients(recipe)
         object = object.capitalize()
-        return random.choice(responses.get(tag)).format(object, "test_ingredients") # TODO GET RECIPE DATA FOR ALL THE INGREDIENTS IN A TYPE OF PIE
+        return random.choice(responses.get(tag)).format(object, ingredients) 
     
     if tag == 'recommend':
-        return random.choice(responses.get(tag)).format("test_pie") # TODO QUERY RECIPE LIST FOR INGREDIENTS THE USER LIKES SO THEY CAN RECOMMEND
+        recommendation = get_recommendation()
+        if len(recommendation) == 0:
+            return "I can't recommend anything if I don't know your likes or dislikes."
+        rec_str = ""
+        for rec in recommendation:
+            rec_str += rec.get('label')+"\n"
+        return random.choice(responses.get(tag)).format(rec_str)
     
     if tag == 'prepare_time':
+        recipe = get_recipe(object)
+        if not recipe:
+            return
         object = object.capitalize()
-        return random.choice(responses.get(tag)).format(object, "test_time")   # TODO GET RECIPE DATA FOR BAKE TIME AND TEMPERATURE
+        return random.choice(responses.get(tag)).format(object, recipe.get('totalTime'))
     
+    if tag == 'get_recipe':
+        recipe = get_recipe(object)
+        if not recipe:
+            return
+        return random.choice(responses.get(tag)).format(recipe.get('url'))
 
 
+
+def check_is_pie(recipe):
+    recipe = recipe.lower()
+    if 'pie' in recipe:
+        return True
+    return False
     
 def assert_fact(tag, object):
-    object.replace(' ','-')
+    object = object.lower()
+    object = object.replace(' ','-')
     fact_str = tag + "("+object+")"
     pl.assertz(fact_str)
     facts.append(fact_str)
     
 def retract_fact(tag, object):
-    object.replace(' ','-')
+    object = object.lower()
+    object = object.replace(' ','-')
     fact_str = tag + "("+object+")"
     pl.retract(fact_str)
     facts.remove(fact_str)
@@ -186,7 +236,7 @@ def get_solutions(tag):
 
 def query_fact(tag, object):
     try:
-        object.replace(' ','_')
+        object = object.replace(' ','_')
         fact_str = tag + "("+object+")"
         sol = list(pl.query(fact_str))
         if sol:
@@ -195,59 +245,132 @@ def query_fact(tag, object):
     except:
         return False
     
-# RECIPE API
+# RECIPE API METHODS
 
+def get_likes():
+    output = []
+    for fact in facts:
+        verb = fact.split('(')[0]
+        if verb != 'like':
+            continue
+        obj = fact.split('(')[1]
+        obj = obj.replace(')','')
+        output.append(obj)
+    return output
+
+def get_dislikes():
+    output = []
+    for fact in facts:
+        verb = fact.split('(')[0]
+        if verb != 'dislike':
+            continue
+        obj = fact.split('(')[1]
+        obj = obj.replace(')','')
+        output.append(obj)
+    return output
+       
+def get_recommendation():
+    output = []
+    likes = get_likes()
+    dislikes = get_dislikes()
+    for key, recipe in recipes.items():
+        for like in likes:
+            if contains_ingredient(like, recipe):
+                output.append(recipe)
+        for dislike in dislikes:
+            if recipe in output and contains_ingredient(dislike, recipe):
+                output.remove(recipe)
+    return output
+        
 def get_recipe(recipe):
+    if not check_is_pie(recipe):
+        print("I don't think I've head of that pie...")
+        return None
     if recipe in recipes.keys():
         return recipes[recipe]
     #appid = 'd04c6f39'
     #appkey = 'ad636405357cd0126ca040ca79306afb'
     url_recipe = recipe.replace(" ", "%20")
     url = "https://api.edamam.com/api/recipes/v2?type=public&q="+url_recipe+"&time=1%2B&app_id=d04c6f39&app_key=ad636405357cd0126ca040ca79306afb"
+    recipe = recipe.lower()
     response = requests.get(url)
     response = json.loads(response.text)
-    print('starting')
+    print('loading...')
     best_score = 0
     best_recipe = None
     for hit in response.get('hits'):
         hit_recipe = hit.get('recipe')
-        hit_nlp = nlp(hit_recipe.get('label'))
+        hit_nlp = nlp(hit_recipe.get('label').lower())
+        
         recipe_nlp = nlp(recipe)
         score = recipe_nlp.similarity(hit_nlp)
         if score > best_score:
             best_score = score
             best_recipe = hit_recipe
+        #print(hit_nlp, score)
     recipes[recipe] = best_recipe
+    store_recipes()
     return best_recipe
 
+def search_ingredient(ingredient):
+    output = ""
+    for key, recipe in recipes.items():
+        if contains_ingredient(ingredient, recipe):
+            output += recipe.get('label')+"\n"
+    return output
 
+def get_ingredients(recipe):
+    output = ""
+    for ingredient in recipe.get('ingredients'):
+        output += ingredient.get('food') + "\n"
+    return output
+
+def contains_ingredient(ingredient, recipe):
+    ingredients = get_ingredients(recipe)
+    if ingredient in ingredients:
+        return True
+    if ingredient in recipe.get('label').lower():
+        return True
+    return False
+
+def store_recipes():
+    recipe_file = open('ChatBot/recipes.pickle','wb')
+    pickle.dump(recipes,recipe_file)
+    recipe_file.close()
+
+def load_recipes():
+    try:
+        recipe_file = open('ChatBot/recipes.pickle', 'rb')     
+        output = pickle.load(recipe_file)
+        return output
+    except:
+        return {}
 
 
 # initialization
-print("Hi! I'm piebot! You can ask me various things about pie recipes, as well as ask for recommendations!")
-       
-       
-get_recipe('apple pie')
-get_recipe('apple pie')
-print('done!')
+print("Hi! I'm piebot! I Come preloaded with some of the most popular pies!\nYou can ask me various things about pie recipes, as well as ask for recommendations!\nRemember to always ask and respond with full sentences!\nWhat's your name?")
+recipes = load_recipes()
+# for pie in sample_pies:
+#     get_recipe(pie)
+
 # main loop
-# while(1):  
-#     statement = input(">> ")
-#     if not statement:
-#         continue
-#     statement = process_statement(statement)
-#     dobj = get_object(statement)
-#     attr = get_attribute(statement)
-#     tag = 'none'
-#     if dobj:
-#         tag = tag_statement(statement.replace(dobj, "_"))
-#     else:
-#         tag = tag_statement(statement)
-#     if tag == 'name':
-#         print(get_response(tag, attr))
-#     else:
-#         print(get_response(tag, dobj))
-#     print(facts)
+while(1):  
+    statement = input(">> ")
+    if not statement:
+        continue
+    statement = process_statement(statement)
+    dobj = get_object(statement)
+    attr = get_attribute(statement)
+    statement = statement.lower()
+    tag = 'none'
+    if dobj:
+        tag = tag_statement(statement.replace(dobj, "_"))
+    else:
+        tag = tag_statement(statement)
+    if tag == 'name':
+        print(get_response(tag, attr))
+    else:
+        print(get_response(tag, dobj))
     
     
 #       tag sentences
