@@ -154,7 +154,6 @@ word_dict = {
             "95.2 percent of U.S. households consume cookies.",
 
             "Half the cookies baked in American homes each year are chocolate chip."
-
         ],
 
     'butter': [
