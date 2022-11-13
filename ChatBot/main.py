@@ -1,4 +1,6 @@
+import json
 import random
+import requests
 import spacy
 from pyswip import Prolog
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
@@ -6,12 +8,15 @@ from nltk.stem import WordNetLemmatizer
 import contractions
 import string
 
+# LIBRARIES
+# spacy, pyswip, contractions, nltk
+
 lemmatizer = WordNetLemmatizer()
 sid = SentimentIntensityAnalyzer()
 nlp = spacy.load("en_core_web_md")
 pl = Prolog()
 facts = []
-name = None
+recipes = {}
 phrases = {
     "none": [],
     "hello": [['hello','greetings','hi', 'salutations'], 0],
@@ -23,10 +28,11 @@ phrases = {
     "ask_ingredient": [["what kind of pie uses _", "which pies have _ in them","What pies use _"],0],
     "get_ingredients": [["what ingredients are in _", "what is used in _", "what do i need to make _"], 0],
     "recommend": [["what is your recommendation","what do you recommend?","recommend me a pie", "what is a pie i might like", "find me a pie i would like"],0],
-    "bake_time": [["how long does _ take to bake", "how long do i bake _", "what temperature do i bake _ at"],0]
+    "prepare_time": [["how long does _ take to make", "how long to make _", "how long until i can eat _"],0],
+    "get_recipe": [["find me a recipe for _", "can you get me a recipe for _", "search for recipes for _"], 0]
 }
 
-responses = {
+responses = { #TODO ADD MORE RESPONSES
     "none": ["I don't quite understand.", "I"],
     "hello": ["Hello!", "Hi there!","Salutations fellow pie enjoyer!"],
     "goodbye": ["Goodbye!", "It was nice talking with you!"],
@@ -37,7 +43,8 @@ responses = {
     "ask_ingredient": ["{} is in the recipe for {}."],
     "get_ingredients": ["{} contains the following:\n {}"],
     "recommend": ["I think you would like {}!"],
-    "bake_time": ["{} takes {} minutes at {} degrees."],
+    "prepare_time": ["{} takes {} minutes to prepare"],
+    "get_recipe": ["here is your recipe: {}"]
 }
 
 def process_statement(statement):
@@ -144,18 +151,18 @@ def get_response(tag, object):
     
     if tag == 'ask_ingredient':
         object = object.capitalize()
-        return random.choice(responses.get(tag)).format(object, "test_pie")
+        return random.choice(responses.get(tag)).format(object, "test_pie") # TODO QUERY RECIPE LIST FOR RECIPES WITH INGREDIENTS
     
     if tag == 'get_ingredients':
         object = object.capitalize()
-        return random.choice(responses.get(tag)).format(object, "test_ingredients")
+        return random.choice(responses.get(tag)).format(object, "test_ingredients") # TODO GET RECIPE DATA FOR ALL THE INGREDIENTS IN A TYPE OF PIE
     
     if tag == 'recommend':
-        return random.choice(responses.get(tag)).format("test_pie")
+        return random.choice(responses.get(tag)).format("test_pie") # TODO QUERY RECIPE LIST FOR INGREDIENTS THE USER LIKES SO THEY CAN RECOMMEND
     
-    if tag == 'bake_time':
+    if tag == 'prepare_time':
         object = object.capitalize()
-        return random.choice(responses.get(tag)).format(object, "test_time", "test_temp")
+        return random.choice(responses.get(tag)).format(object, "test_time")   # TODO GET RECIPE DATA FOR BAKE TIME AND TEMPERATURE
     
 
 
@@ -188,28 +195,59 @@ def query_fact(tag, object):
     except:
         return False
     
+# RECIPE API
+
+def get_recipe(recipe):
+    if recipe in recipes.keys():
+        return recipes[recipe]
+    #appid = 'd04c6f39'
+    #appkey = 'ad636405357cd0126ca040ca79306afb'
+    url_recipe = recipe.replace(" ", "%20")
+    url = "https://api.edamam.com/api/recipes/v2?type=public&q="+url_recipe+"&time=1%2B&app_id=d04c6f39&app_key=ad636405357cd0126ca040ca79306afb"
+    response = requests.get(url)
+    response = json.loads(response.text)
+    print('starting')
+    best_score = 0
+    best_recipe = None
+    for hit in response.get('hits'):
+        hit_recipe = hit.get('recipe')
+        hit_nlp = nlp(hit_recipe.get('label'))
+        recipe_nlp = nlp(recipe)
+        score = recipe_nlp.similarity(hit_nlp)
+        if score > best_score:
+            best_score = score
+            best_recipe = hit_recipe
+    recipes[recipe] = best_recipe
+    return best_recipe
+
+
+
 
 # initialization
 print("Hi! I'm piebot! You can ask me various things about pie recipes, as well as ask for recommendations!")
        
+       
+get_recipe('apple pie')
+get_recipe('apple pie')
+print('done!')
 # main loop
-while(1):  
-    statement = input(">> ")
-    if not statement:
-        continue
-    statement = process_statement(statement)
-    dobj = get_object(statement)
-    attr = get_attribute(statement)
-    tag = 'none'
-    if dobj:
-        tag = tag_statement(statement.replace(dobj, "_"))
-    else:
-        tag = tag_statement(statement)
-    if tag == 'name':
-        print(get_response(tag, attr))
-    else:
-        print(get_response(tag, dobj))
-    print(facts)
+# while(1):  
+#     statement = input(">> ")
+#     if not statement:
+#         continue
+#     statement = process_statement(statement)
+#     dobj = get_object(statement)
+#     attr = get_attribute(statement)
+#     tag = 'none'
+#     if dobj:
+#         tag = tag_statement(statement.replace(dobj, "_"))
+#     else:
+#         tag = tag_statement(statement)
+#     if tag == 'name':
+#         print(get_response(tag, attr))
+#     else:
+#         print(get_response(tag, dobj))
+#     print(facts)
     
     
 #       tag sentences
