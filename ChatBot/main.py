@@ -37,8 +37,8 @@ phrases = {
     "none": [],
     "ask_name": [["what is your name", "what is your _", "what do i call you"],0],
     "thank": [["thank you", "thank you piebot", "thank _"],0],
-    "hello": [['hello','greetings','hi', 'salutations', 'hi _'], 0],
-    "goodbye": [['goodbye','bye','talk to you later'],0],
+    "hello": [['hello','greetings','hi', 'salutations', 'hi _bot' ,'hello _bot'], 0],
+    "goodbye": [['goodbye','bye','talk to you later', 'goodbye _bot'],0],
     "name": [['my name is _', 'I am named _', 'You can call me _'], 0],
     "neutral": [["_ is alright, _ is not bad", "I do not hate _", "_ is not the worst", "_ is okay"], 0],
     "like": [["i like _", "_ is tasty", "_ is good", "i am a fan of _", "i love _"], 1],
@@ -50,7 +50,7 @@ phrases = {
     "get_recipe": [["what is the recipe for _","find me a recipe for _", "can you get me a recipe for _", "search for recipes for _"], 0]
 }
 
-responses = { #TODO ADD MORE RESPONSES
+responses = {
     "none": ["I don't quite understand.", "I don't think I understood that."],
     "ask_name": ['My name is PieBot!'],
     "thank": ["My pleasure!", "No problem!", "The pleasure is mine!"],
@@ -68,12 +68,19 @@ responses = { #TODO ADD MORE RESPONSES
 }
 
 def process_statement(statement):
+    '''
+        splits contractions into their seperate forms and removes punctuation
+    '''
     statement = contractions.fix(statement)
     statement = "".join([w for w in statement if w not in string.punctuation])
-    #print(statement)
     return statement
 
 def tag_statement(statement):
+    '''
+        tags a sentence as one of the phrases from the variable phrases,
+        
+        primarily based on the sentence that is closest to any given phrase tag's sample sentences, and throws out any phrase tags that would have opposite sentiment to the inputted statement. such as like vs dislike.
+    '''
     sentiment = sid.polarity_scores(statement).get('compound')
     statement = nlp(statement)
     best_tag = "none",
@@ -90,7 +97,6 @@ def tag_statement(statement):
             phrase_score = tok_phrase.similarity(statement)
             if phrase_score > score:
                 score = phrase_score
-            #print(tok_phrase,statement, phrase_score)
         if score > 0.7:
             if score > best_score:
                 best_score = score
@@ -99,10 +105,12 @@ def tag_statement(statement):
     return best_tag
 
 def get_object(statement):
+    '''
+        attempts to retrieve the direct object, or in somecases the subject of a given sentence.
+        sometimes certain sentences can be a little messy, like with the word pie, so there a few rules in place to manage and retrieve the best value to use for the response
+    '''
     output = ""
     compounded = False
-    # for tok in nlp(statement): #PRINTS SENTENCE STRUCTURE OF EACH WORD
-    #     print(tok.__str__(), tok.dep_)
     for tok in nlp(statement):
         if tok.dep_ == 'compound' or tok.dep_ == 'amod':
             compounded = True
@@ -127,12 +135,20 @@ def get_object(statement):
     return output.lower()
         
 def get_attribute(statement):
+    '''
+        retreives the first attr token from a statement, mainly used to extract names from a statement
+    '''
     for tok in nlp(statement):
         if tok.dep_ == 'attr':
             return tok.__str__()
     return None
         
 def get_response(tag, object):
+    '''
+        returns the response to a given tag and object, 
+        tag comes from tag_statement(statement) and object comes from get_object(statement)
+        an example is if the tag is 'name' and the object is 'Bill', a sample response would be: 'Hello Bill!'
+    '''
     if tag == 'none' or tag == ('none',):
         return random.choice(responses.get('none'))
     
@@ -210,12 +226,18 @@ def get_response(tag, object):
 
 
 def check_is_pie(recipe):
+    '''
+        simply checks if the word pie exists in a phrase, used for ensuring the bot restricts itself to pie recipes
+    '''
     recipe = recipe.lower()
     if 'pie' in recipe:
         return True
     return False
     
 def assert_fact(tag, object):
+    '''
+        connecting function for pySWIP, asserts a fact to the knowledge base, and adds it to the fact list for debugging purposes
+    '''
     object = object.lower()
     object = object.replace(' ','-')
     fact_str = tag + "("+object+")"
@@ -223,6 +245,9 @@ def assert_fact(tag, object):
     facts.append(fact_str)
     
 def retract_fact(tag, object):
+    '''
+        connecting function for pySWIP, retracts a fact to the knowledge base, and removes it from the fact list for debugging purposes
+    '''
     object = object.lower()
     object = object.replace(' ','-')
     fact_str = tag + "("+object+")"
@@ -230,11 +255,22 @@ def retract_fact(tag, object):
     facts.remove(fact_str)
     
 def get_solutions(tag):
-    query_str = tag+"(X)."
-    sol = list(pl.query(query_str))
-    return sol
+    '''
+        connecting function for pySWIP, retrieves all solutions to a given phrase,
+        an example being if tag == 'like' it will return everything the user likes
+    '''
+    try:
+        query_str = tag+"(X)."
+        sol = list(pl.query(query_str))
+        return sol
+    except:
+        return []
 
 def query_fact(tag, object):
+    '''
+        checks to see if a certain fact is true, based on the given tag and object
+        prolog structure is: tag(object).
+    '''
     try:
         object = object.replace(' ','_')
         fact_str = tag + "("+object+")"
@@ -248,28 +284,31 @@ def query_fact(tag, object):
 # RECIPE API METHODS
 
 def get_likes():
+    '''
+        queries the prolog knowledge base for all the likes the user has inputted on runtime
+    '''
     output = []
-    for fact in facts:
-        verb = fact.split('(')[0]
-        if verb != 'like':
-            continue
-        obj = fact.split('(')[1]
-        obj = obj.replace(')','')
-        output.append(obj)
+    solutions = get_solutions('like')
+    for solution in solutions:
+        for key,value in solution.items():
+            output.append(value)
     return output
 
 def get_dislikes():
+    '''
+        queries the prolog knowledge base for all the dislikes the user has inputted on runtime
+    '''
     output = []
-    for fact in facts:
-        verb = fact.split('(')[0]
-        if verb != 'dislike':
-            continue
-        obj = fact.split('(')[1]
-        obj = obj.replace(')','')
-        output.append(obj)
+    solutions = get_solutions('dislike')
+    for solution in solutions:
+        for key,value in solution.items():
+            output.append(value)
     return output
        
 def get_recommendation():
+    '''
+        adds any loaded pies that contain ingredients the user has said they like to a list, and remove any pies that contain ingredients the user said they don't like
+    '''
     output = []
     likes = get_likes()
     dislikes = get_dislikes()
@@ -283,6 +322,9 @@ def get_recommendation():
     return output
         
 def get_recipe(recipe):
+    '''
+        gets recipe data from the edemam API, returning the recipe with the closest name to the given recipe string
+    '''
     if not check_is_pie(recipe):
         print("I don't think I've head of that pie...")
         return None
@@ -307,12 +349,14 @@ def get_recipe(recipe):
         if score > best_score:
             best_score = score
             best_recipe = hit_recipe
-        #print(hit_nlp, score)
     recipes[recipe] = best_recipe
     store_recipes()
     return best_recipe
 
 def search_ingredient(ingredient):
+    '''
+        searches all the loaded recipes for any recipes that contain a given ingredient
+    '''
     output = ""
     for key, recipe in recipes.items():
         if contains_ingredient(ingredient, recipe):
@@ -320,12 +364,18 @@ def search_ingredient(ingredient):
     return output
 
 def get_ingredients(recipe):
+    '''
+        gets all the ingredients for a given recipe
+    '''
     output = ""
     for ingredient in recipe.get('ingredients'):
         output += ingredient.get('food') + "\n"
     return output
 
 def contains_ingredient(ingredient, recipe):
+    '''
+        checks if a given recipe contains a given ingredient, as well as checking if the ingredient is in the name of the recipe
+    '''
     ingredients = get_ingredients(recipe)
     if ingredient in ingredients:
         return True
@@ -334,11 +384,17 @@ def contains_ingredient(ingredient, recipe):
     return False
 
 def store_recipes():
+    '''
+        updates the pickle recipe file for the current recipes list
+    '''
     recipe_file = open('ChatBot/recipes.pickle','wb')
     pickle.dump(recipes,recipe_file)
     recipe_file.close()
 
 def load_recipes():
+    '''
+        loads the recipes stored in the pickle file
+    '''
     try:
         recipe_file = open('ChatBot/recipes.pickle', 'rb')     
         output = pickle.load(recipe_file)
@@ -354,6 +410,9 @@ recipes = load_recipes()
 #     get_recipe(pie)
 
 # main loop
+'''
+    main control loop, close on saying a phrase tagged as 'goodbye'
+'''
 while(1):  
     statement = input(">> ")
     if not statement:
@@ -372,8 +431,3 @@ while(1):
     else:
         print(get_response(tag, dobj))
     
-    
-#       tag sentences
-#       respond from kb
-# store any personal information in pyswip
-# web scrape for information
