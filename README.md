@@ -18,3 +18,5 @@ Portfolio for Human Language Technologies
 [Web Crawler Report](https://github.com/Billpdozier/HLT_Assignments/blob/main/Web%20Crawler/Web%20Crawler%20Report.pdf)
 
 [ChatBot](https://github.com/Billpdozier/HLT_Assignments/tree/main/ChatBot)
+
+[ACL Paper Summary}(https://github.com/Billpdozier/HLT_Assignments/blob/main/ACL%20PAPER%20SUMMARY%20Bill%20Dozier.pdf)
