@@ -9,8 +9,7 @@ from nltk.stem import WordNetLemmatizer
 import contractions
 import string
 
-# LIBRARIES
-# spacy, pyswip, contractions, nltk
+
 
 lemmatizer = WordNetLemmatizer()
 sid = SentimentIntensityAnalyzer()
