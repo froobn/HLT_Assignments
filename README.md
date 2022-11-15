@@ -20,3 +20,5 @@ Portfolio for Human Language Technologies
 [ChatBot](https://github.com/Billpdozier/HLT_Assignments/tree/main/ChatBot)
 
 [ACL Paper Summary](https://github.com/Billpdozier/HLT_Assignments/blob/main/ACL%20PAPER%20SUMMARY%20Bill%20Dozier.pdf)
+
+[Author Attribution](https://github.com/Billpdozier/HLT_Assignments/blob/main/Author%20Attribution/authorattrib.ipynb)
